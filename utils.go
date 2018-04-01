@@ -14,9 +14,6 @@ type URLParam struct {
 	Val string
 }
 
-// TODO: How can we return a Response AND an error in a channel
-// TODO: Logging...
-
 func createGetRequest(baseURL string, isJSON bool, params []URLParam) (*http.Request, error) {
 	URL, err := url.Parse(baseURL)
 
